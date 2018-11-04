@@ -15,7 +15,7 @@ x_clickPosition = 0
 y_clickPosition = 0
 
 def on_press(event):
-    print("Your position:" ,event.button,event.xdata, event.ydata)
+    #print("Your position:" ,event.button,event.xdata, event.ydata)
     global x_clickPosition
     x_clickPosition = event.xdata
     global y_clickPosition
@@ -92,19 +92,20 @@ def chooseCanteen():
         distance.append(length.getlen())
         canteenSort=dict(zip(canteenName,distance))
         i+=1
-
-
-    print("vvv",canteenSort)
-    canteenSort=sorted(canteenSort.items(),key=operator.itemgetter(1))
+    #print("vvv",canteenSort)
+    canteenSort=sorted(canteenSort.items(),key=operator.itemgetter(1)) #sorting the canteen based on distance
     canteenSorted=dict(canteenSort)
     for key in canteenSorted.keys():
-        print('Sorted canteen by distance = {}'.format(key))
+        print('{}'.format(key))
+    print('\n')
+
     z=distance.index(min(distance))
     finalCanteen=list(canteenPositionX.keys())[z]
     print("The nearest canteen is ",finalCanteen)
+    print('\n')
+    plt.close()
+    clickPosition()
+
 
 clickPosition()
-
-
-
 
