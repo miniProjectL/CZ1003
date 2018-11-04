@@ -1,14 +1,12 @@
 import matplotlib.animation as animation
 import matplotlib.pyplot as plt
-import numpy as np
 from PIL import Image
 from pylab import *
 import pyautogui,sys,math
 import matplotlib.image as mpimg
 import operator
 from tkinter import *
-from collections import defaultdict
-from heapq import *
+
 
 
 x_clickPosition = 0
@@ -43,9 +41,7 @@ canteenName=["Ananda Kitchen","North Hill Food Court","North Indian Cuisine","Ca
 # canteenPositionX={'Ananda Kitchen':(2146.84677,225.0823),'North Hill Food Court':(2235.1371,240.8484),'North Indian Cuisine':(1781.0726,480.4935),'Canteen9':(1686.4758,638.1548),\
 #                'Canteen2':(1733.7742,1360.2435),'Canteen1':(1831.5241,1685.0258),'NTU NorthSpine Plaza':(863.4838,1612.5016),'Peach Garden':(708.9758,1580.9693),\
 #               'NIE Canteen':(258.0645,1300.3322),'Food Court 16':(882.4032,994.4693),\
-#                 'Food Court 13':(907.6290,748.5177),'Canteen 14':(1122.0483,559.3241)}#get canteen position coordinate
-
-#def canteenPosition():
+#                 'Food Court 13':(907.6290,748.5177),'Canteen 14':(1122.0483,559.3241)}  #get canteen position coordinate
 
 canteenPositionX={'Ananda Kitchen':2146.84677,'North Hill Food Court':2235.1371,'North Indian Cuisine':1781.0726,'Canteen9':1686.4758,\
                'Canteen 2':1733.7742,'Canteen 1':1831.5241,'NTU NorthSpine Plaza':863.4838,'Peach Garden':708.9758,\
